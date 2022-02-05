@@ -1,0 +1,36 @@
+$bg_verdeoscuro: #226769;
+
+.nav{
+    list-style-type: none;
+    background: $bg_verdeoscuro;
+    background: linear-gradient(90deg, $bg_verdeoscuro 16%, #08ccc3 98%);
+    margin: 0;
+    width: 100%;
+                          
+    ul {
+        padding: 0;
+        width: 100%;
+        list-style-type:none;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            display: inline-block;
+            text-align:justify;
+            a { 
+                margin: 10px;
+                text-decoration: none;
+                display: inline-block;
+                font-family:'Questrial', sans-serif;
+                font-size: 1.8rem;
+                padding: 10px;
+                font-weight: bolder;
+                &:hover {
+                         background-color: #66d1b6;
+                         border-radius:20px ;
+                }
+            }
+        }
+    }
+}

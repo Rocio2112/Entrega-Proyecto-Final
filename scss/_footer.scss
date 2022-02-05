@@ -1,0 +1,17 @@
+footer{
+    background: #226769;
+    background: linear-gradient(90deg, #226769 16%, #08ccc3 98%);
+    border-style: groove;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    h4{
+        font-family:'Questrial', sans-serif;
+        font-size: 18px;
+        color: papayawhip;  
+}
+    .pagos{
+           justify-content: flex-start;
+           display: inline;  
+}
+}

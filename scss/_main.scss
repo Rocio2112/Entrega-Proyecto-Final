@@ -1,0 +1,38 @@
+main{
+    background:linear-gradient(to top,#b9feff 0%, #0d6f57 100% );
+    padding: 40px;;
+    flex-direction: row;
+    h2{
+       font-family:'Questrial', sans-serif;
+       font-size: 1.7rem;
+       font-weight: bolder;
+       line-height: 80px;
+}
+    .card-group{
+               justify-content: space-between;
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+}
+    .nosotros {
+               float: right;
+               padding: 20px;
+               padding-right: 50px;
+               width: 20px;  
+}    
+   .parrafo1{
+              padding: 10px;
+              font-size: 15px;
+              font-family: 'Manjari', sans-serif;
+              display:flex;
+              justify-content: center;
+              text-justify: distribute;
+}
+    h3{
+       font-size: 28px;
+       &:hover {
+       transform: scale(1.5,1.5) ;
+       transition: all 0,5s;
+      }
+    }      
+}

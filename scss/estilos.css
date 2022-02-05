@@ -1,0 +1,299 @@
+header {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  background: #a4e8d4;
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, #a4e8d4), color-stop(52%, #2b9170), color-stop(88%, #165c61));
+  background: linear-gradient(90deg, #a4e8d4 21%, #2b9170 52%, #165c61 88%);
+}
+
+header .icons {
+  margin: 10px;
+  padding: 10px;
+}
+
+header .portada {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+}
+
+.nav {
+  list-style-type: none;
+  background: #226769;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, #226769), color-stop(98%, #08ccc3));
+  background: linear-gradient(90deg, #226769 16%, #08ccc3 98%);
+  margin: 0;
+  width: 100%;
+}
+
+.nav ul {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav ul li {
+  display: inline-block;
+  text-align: justify;
+}
+
+.nav ul li a {
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.8rem;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.nav ul li a:hover {
+  background-color: #66d1b6;
+  border-radius: 20px;
+}
+
+main {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b9feff), to(#0d6f57));
+  background: linear-gradient(to top, #b9feff 0%, #0d6f57 100%);
+  padding: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  line-height: 80px;
+}
+
+main .card-group {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .nosotros {
+  float: right;
+  padding: 20px;
+  padding-right: 50px;
+  width: 20px;
+}
+
+main .parrafo1 {
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Manjari', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: distribute;
+}
+
+main h3 {
+  font-size: 28px;
+}
+
+main h3:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 0,5s;
+  transition: all 0,5s;
+}
+
+footer {
+  background: #226769;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16%, #226769), color-stop(98%, #08ccc3));
+  background: linear-gradient(90deg, #226769 16%, #08ccc3 98%);
+  border-style: groove;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer h4 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: papayawhip;
+}
+
+footer .pagos {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: inline;
+}
+
+/*Menu de registro*/
+.form, .form a, .form a .formulario {
+  padding: 10px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.form a, .form a .formulario a {
+  text-decoration: none;
+  color: #47c9a8;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: bolder;
+}
+
+.form a .formulario {
+  background-color: #43bb9d;
+  color: #115355;
+  font-weight: bolder;
+}
+
+/*menu gafas de sol*/
+.galery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 200px;
+  padding: 20px;
+  grid-auto-flow: row dense;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.button {
+  font-size: 8px;
+  width: 100px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.Buscar {
+  height: 25px;
+  width: 50px;
+}
+
+.estilo {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.estilo a:hover {
+  text-decoration: underline;
+}
+
+.estilo .img-container {
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.estilo .img-container img {
+  width: 100%;
+  display: inline-block;
+  top: -25%;
+  -webkit-transition: all 0,5s;
+  transition: all 0,5s;
+}
+
+.estilo .img-container img:hover .img-container {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.estilo .add-cart {
+  width: 60%;
+  display: inline-block;
+  margin-top: 2px;
+  text-decoration: none;
+  color: #089494;
+  background-color: #aaf3e1;
+  padding: 15px;
+  border: 1px solid #13ecab;
+  border-radius: 25px;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+h2 {
+  font-weight: bolder;
+  background-color: #008080;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 8px;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h5 {
+  color: #7fffd4;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

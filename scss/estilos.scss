@@ -1,0 +1,118 @@
+@import "header";
+@import "nav";
+@import "main";
+@import "footer";
+$color1:#ffefd5;
+$color2: #165c61;
+$font1: 'Questrial', sans-serif;
+$font2: 'Manjari',sans-serif;
+
+@mixin fonts ($color, $font) {
+    font-weight: bolder;
+}
+   /*Menu de registro*/
+.form{ 
+     padding: 10px;
+     font-family:'Questrial', sans-serif; 
+     a{  
+         @extend .form;
+         text-decoration: none;
+         color: #47c9a8;
+         display: inline-flex;
+         font-weight: bolder;
+        .formulario{
+                  @extend .form;
+                  background-color:#43bb9d;
+                  color:#115355;
+                 font-weight: bolder;  
+        } 
+   }
+}
+/*menu gafas de sol*/
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 200px;
+    padding: 20px;
+    grid-auto-flow: row dense;
+    object-fit: cover;
+}
+
+.button{
+    font-size: 8px;
+    width: 100px;
+    margin: 8px;    
+    padding:8px;                                                     
+}
+.Buscar {
+    height: 25px;
+    width: 50px;
+}
+
+.estilo{ 
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a:hover {
+               text-decoration: underline;
+}
+   .img-container {
+                   overflow: hidden;
+                   height: 300px;
+                   position: relative;
+                   border-radius: 15px;
+                   display:inline-flex;
+                   img {
+                         width: 100%;
+                         display: inline-block;
+                         top: -25%;
+                         transition: all 0,5s;
+                         &:hover .img-container{
+                                               transform: scale(1.2);
+                      }     
+                   }
+                }
+
+    .add-cart{ 
+               width: 60%;
+               display: inline-block;
+               margin-top: 2px;
+               text-decoration: none;
+               color: #089494;
+               background-color: #aaf3e1;
+               padding: 15px;
+               border: 1px solid #13ecab;
+               border-radius: 25px;
+   }
+}
+
+p{ 
+     @include fonts ($color2, $font2);
+    font-size: 30px;
+}
+h2{
+    @include fonts ($color1, $font1);
+    background-color: #008080;
+    justify-content: center;
+    padding-left: 8px;
+    
+}
+h1{
+    @include fonts($color1, $font2);
+}
+h5 {
+    color: #7fffd4;
+} 
+
+  @media only screen and (max-width:768px) {
+    .header{
+     padding-top: 20px;
+     display: flex;
+    }
+}
+
